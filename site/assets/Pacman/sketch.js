@@ -14,7 +14,7 @@ var cherry
 
 var points = 0;
 
-var speed = 2.5;
+var speed;
 
 var pacman;
 var finishsprite;
@@ -113,7 +113,7 @@ function draw() {
       drawSprite(finishsprite);
       drawSprite(pacman);
       points = 0;
-      speed = 2.5;
+      speed = 3;
 
       //pixel collision
       if (level1sprite.overlapPixel(pacman.position.x - 24, pacman.position.y + 24) || level1sprite.overlapPixel(pacman.position.x + 24, pacman.position.y - 24)|| level1sprite.overlapPixel(pacman.position.x + 24, pacman.position.y + 24) || level1sprite.overlapPixel(pacman.position.x - 24, pacman.position.y - 24)== true) {
