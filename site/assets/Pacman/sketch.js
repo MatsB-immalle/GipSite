@@ -37,7 +37,7 @@ function preload() {
 
 function setup() {
   createCanvas(900, 700);
-  frameRate(120);
+  frameRate(60);
 
   pacman = createSprite(500, 500);
   pacman.setCollider("circle",0,0,25)
